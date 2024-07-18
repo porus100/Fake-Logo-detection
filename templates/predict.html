@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+        <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+         
+       
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: rgb(245, 236, 236);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        .h1{
+          font-family:"Concert One";
+          
+        }
+        body {
+  background-image: url("/static/17973908.jpg");
+  background-size: cover;
+}
+        
+        
+        </style>
+</head>
+<body><div class="background">
+  
+
+    <CENTER><h1  class="   text-dark  h1"><b>Fake Logo Detection</b></h1></CENTER>
+    <ul>
+       
+        <li style="float:right"><a class="active" href="{{url_for('predict_image')}}">Predict</a></li>
+      
+      </ul>
+      <br>
+      <br>
+<center>
+<div class="container">
+  <div class="card" style="width: 30rem; height: 20rem; box-shadow: 10px 10px 5px rgb(255, 255, 255); border-radius: 20px; padding: 20px;  box-shadow: 0 0 10px rgba(6, 220, 248, 0.8);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); ">
+      <div class="card-body">
+    <h1 class="card-title"  >Check if your product is Authentic</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        
+        <button class="card-subtitle mb-2 text-muted btn btn-outline-info" type="submit" >Predict</button>
+     
+    </form>
+    <img src="C:\Users\aaron\Project\image\images (0).jpg" width="290" height="120" alt="Logo">
+</div>
+  </div>
+</div>
+
+</center>
+
+</div>
+</body>
+</html>
